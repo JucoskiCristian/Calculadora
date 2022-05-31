@@ -54,6 +54,8 @@ jobs:
         java-version: '18'
         distribution: 'temurin'
         cache: maven
+    - name: empacota o Projeto
+      run: mvn -B package --file pom.xml -DskipTests
   # Cria o artefato de download
     - name: Crie uma pasta temporária de downloads de artefatos
       run: mkdir staging
