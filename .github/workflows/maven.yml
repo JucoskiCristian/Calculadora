@@ -13,7 +13,8 @@ jobs:
   build-hmg:
 
     runs-on: ubuntu-latest
-    environment: hmg
+    environment:
+      name: hmg
     needs: build-dev
     steps:
     - uses: actions/checkout@v3
